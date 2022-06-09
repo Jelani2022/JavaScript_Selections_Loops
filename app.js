@@ -30,15 +30,15 @@ while (i < 100){
  i++
 }
 let i = 1;
-let fiz = "fizz";
-let buz = "buzz";
+let Fiz = "fizz";
+let Buz = "buzz";
 while (i <100) {
     if (i%3==0 , i%5==0){
-        console.log(fiz + buz)
+        console.log(Fiz + Buz)
     } else if (i%3==0){
-        console.log(fiz)
+        console.log(Fiz)
     } else if (i%5==0){
-        console.log(buz)
+        console.log(Buz)
     } 
 i++
 }
@@ -50,10 +50,30 @@ let N = Math.round(Math.random() * (500 - 100) + 100); // creates a random numbe
 let found = "Found Value!"
 let nope = "Did not find value."
 
+for (let i = 1; i <=N; i++){
+    if (i ==value){
+    console.log(` Found ${value}!`)
+    break;
+} if (i == N){
 
+console.log(nope)
+}
+}
 
 // Exercise 5
-let fizzDivisor = Math.round(Math.random() * (1 - 10) + 1);
-let buzzDivisor = Math.round(Math.random() * (1 - 10) + 1);
-let n = Math.round(Math.random() * (1 - 1000) + 1);
-let start = Math.round(Math.random() * (1 - 10) + 1);
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let n = Math.round(Math.random() * (1000 - 1) + 1);
+let start = Math.round(Math.random() * (10 - 1) + 1);
+
+for (let i = start; i <= n; i++){
+    let output = ""
+    if (i % fizzDivisor == 0){
+        output += "fizz";
+    }
+    if (i % buzzDivisor == 0){
+        output += "buzz";
+    }
+
+    console.log(i, output) 
+}  
