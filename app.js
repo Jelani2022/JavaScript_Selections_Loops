@@ -29,7 +29,11 @@ for (let i = 1; i <= 100; i++){
 // Exercise 4
 let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
 let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
+let found = "Found Value!"
+let nope = "Did not find value."
+for (){
 
+}
 // Exercise 5
 let fizzDivisor = Math.round(Math.random() * (1 - 10) + 1);
 let buzzDivisor = Math.round(Math.random() * (1 - 10) + 1);
