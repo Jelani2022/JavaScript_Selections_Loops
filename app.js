@@ -29,7 +29,19 @@ while (i < 100){
     }
  i++
 }
-
+let i = 1;
+let fiz = "fizz";
+let buz = "buzz";
+while (i <100) {
+    if (i%3==0 , i%5==0){
+        console.log(fiz + buz)
+    } else if (i%3==0){
+        console.log(fiz)
+    } else if (i%5==0){
+        console.log(buz)
+    } 
+i++
+}
 
 
 // Exercise 4
